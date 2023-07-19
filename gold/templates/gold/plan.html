@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Plan</title>
+    <link rel="stylesheet" href="{% static 'gold/style.css' %}">
+</head>
+<body>
+    <div class="cyan stuff-box">
+        {% include 'gold/nav.html' %}
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 0: Requirements Specification</h2>
+        <p>
+            This plan and focus of this website is to create an app that can convert a given weight into gold. This will be done by using a database to store the conversions, 
+            recieving input given by the user,
+            using an api from nasdaq, and creating our own api to handle the conversions.
+        </p>
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 1: Design</h2>
+        <p>
+            The first step is to build the django server and html side of the website. Creating a quick template and input boxes for the website is simple enough
+        </p>
+        <p>
+            From there I'll focus on recieving the data from nasdaq and implementing that into my website
+        </p>
+        <p>
+            I will then get the database up and migrated and then I'll focus on the unitconv app.
+            The unitconv app will probably take the most time as that is the api and that will be something new and unfamiliar.
+            The idea behind the unitconv will be to create an api that can take an input of a unit and change it to a different unit
+        </p>
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 2: Implementation</h2>
+        <p>
+            Created Django server and html for the site. Using an input box for numbers and a selection box for the different units.
+        </p>
+        <p>
+            Using the fetch api I can get the dataset from nasdaq.
+            Organize the data and display it to the website 
+        </p>
+        <p>
+            Create Conversion database with unit name and conversation rate.
+            I decided to have my base conversion be in tons as it makes the math simpler (Multiply to convert from tons, divide to convert to tons)
+        </p>
+        <p>
+            Create unitconv api that has proper error handling. Will take <code>from</code>, <code>to</code>, and <code>value</code>.
+            Using these it will convert the value from the from unit to to.
+        </p>
+        <p>
+            I then fetch the data when the user presses the button and display it in a div. This div if clicked on will be deleted.
+            Handle errors here and return a different message.
+        </p>
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 3: Testing & Debugging</h2>
+        <p>
+            Tested no from, to, and/or value in unitconv api.
+            Tested strings instead of integers in unitconv api.
+            Tested negative values in unitconv.
+            Tested string in number input for gold app.
+            Tested changing option in select.
+            Tested not inputing anything in number input.
+            Tested negative numbers.
+            Tested blocking nasdaq and unitconv.
+        </p>
+        <p>
+            After all the testing no major bugs have been found.
+        </p>
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 4: Deployment</h2>
+        <p>
+            Cloned and tested in a new location. Everything ran smoothly
+        </p>
+    </div>
+    <div class="cyan stuff-box">
+        <h2>Phase 5: Maintenance</h2>
+        <h3>
+            What parts of your program are sloppily written and hard to understand?
+        </h3>
+        <p>
+            I'm very happy with the code in this project although the convert funciton in javascript could probably be done better.
+            I think most if not all of it should be easy to understand as long as you know how the fetch api works.
+        </p>
+        <h3>
+            Will your documentation make sense yourself in six months or anybody else?
+        </h3>
+        <p>
+            I made sure the documentation is simple but also specific with what I focused on so it will definetly make sense to me.
+            Hopefully others can also understand it very clearly 
+        </p>
+        <h3>
+            WIll your program continue to work after upgrading the computer's hardware, the operating system, or the next versions of html and css?
+        </h3>
+        <p>
+            Everything I have will work unless something is changed from the libraries used such as django. If any of the apis shutdown the website will still run and proper error messages are displayed
+        </p>
+    </div>
+</body>
+</html>

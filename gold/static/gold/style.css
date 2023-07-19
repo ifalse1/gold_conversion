@@ -1,0 +1,122 @@
+.expression {
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 5px;
+    border-style: 1px solid;
+    border-color: #404040;
+    padding: 3px;
+    padding-bottom: 5px;
+    font-family: monospace;
+	margin: 10px;
+}
+
+nav > ol {
+    display: flex;
+}
+
+nav > ol > li {
+    flex: 1;
+}
+
+li {
+	display: inline-flex;
+	margin-right: 30px;
+	border-radius: 20px;
+	border-width: 2px;
+	padding: 2px;
+	border: solid;
+	background-color: cyan;
+}
+
+input, select, button {
+	text-align: center;
+	margin: 10px;
+}
+
+.disabled {
+    color: grey;
+    text-decoration: underline;
+}
+
+div {
+	text-align: center;
+}
+
+.close, button {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+	cursor: pointer;
+}
+
+.stuff-box {
+	border-radius: 10px;
+	border-width: 2px;
+	color: white;
+	font-family: 'helvetica neue', helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin: 10px;
+	padding: 3px 10px;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+}
+
+.red, .subtraction {
+	border-color: rgb(255,0,0);
+	background:   rgb(180,60,60);
+	box-shadow:   1px 1px 2px rgba(200,0,0,0.4);
+}
+
+.green, .addition {
+	border-color: rgb(0,255,0);
+	background:   rgb(60,180,60);
+	box-shadow:   1px 1px 2px rgba(0,200,0,0.4);
+}
+
+.blue, .multiplication {
+	border-color: rgb(0,0,255);
+	background:   rgb(60,60,180);
+	box-shadow:   1px 1px 2px rgba(0,0,200,0.4);
+}
+
+.cyan, .exponentiation {
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: rgb(0,255,255);
+	background:   rgb(60, 180,180);
+	box-shadow:   1px 1px 2px rgba(0,200,200,0.4);
+	font-family: 'helvetica neue', helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin: 10px;
+	padding: 3px 10px;
+	text-align: center;
+}
+
+.recent-expressions, .remainder {
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: rgb(255,0,255);
+	background:   rgb(180,60,180);
+	box-shadow:   1px 1px 2px rgba(200,0,200,0.4);
+	font-family: 'helvetica neue', helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin: 10px;
+	padding: 3px 10px;
+	text-align: center;
+}
+
+.yellow, .division {
+	border-color: rgb(255,255,0);
+	background:   rgb(180,180,60);
+	box-shadow:   1px 1px 2px rgba(200,200,0,0.4);
+}
+
+.white {
+	border-color: rgb(255,255,255);
+	background:   rgb(180,180,180);
+	box-shadow:   1px 1px 2px rgba(200,200,0,0.4);
+}
+
+.black {
+	border-color: rgb(0,0,0);
+	background:   rgb(75,75,75);
+	box-shadow:   1px 1px 2px rgba(200,200,0,0.4);
+}

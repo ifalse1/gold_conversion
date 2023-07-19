@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Weight in Gold</title>
+        <link rel="stylesheet" href="{% static 'gold/style.css' %}">
+    </head>
+    <body>
+        <div class="cyan stuff-box">
+            {% include 'gold/nav.html' %}
+        </div>
+        <div class="yellow stuff-box">
+            <h2>What's Your Weight's Worth In Gold?</h2>
+            <p>Input your weight and press the = button to see what you're worth</p>
+            <p>For your privacy, results are removed when clicked</p>
+            <input type="number" id="value">
+            <select id="unit">
+                <option>T</option>
+                <option>g</option>
+                <option>t_oz</option>
+                <option>kg</option>
+                <option>lb</option>
+                <option>oz</option>
+            </select>
+            <button type="button" onclick="convert()">=</button>
+            <p id="nasdaq"></p>
+        </div>
+        <div id="container"></div>
+        <script src="{% static 'gold/script.js' %}"></script>
+    </body>
+</html>
